@@ -33,7 +33,6 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.lstCashierQueue = new System.Windows.Forms.ListView();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnRefresh
@@ -92,6 +91,5 @@
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.ListView lstCashierQueue;
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -33,6 +33,7 @@ namespace LabExBasicQueuingCashier
         private void btnNext_Click(object sender, EventArgs e)
         {
             CashierClass.CashierQueue.Dequeue();
+            DisplayCashierQueue(CashierClass.CashierQueue);
         }
         //this time is for refresh the list when there are update in the queue
         private void timer_Tick(object sender, EventArgs e)

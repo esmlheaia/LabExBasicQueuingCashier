@@ -76,6 +76,7 @@
             this.Controls.Add(this.bttnCashier);
             this.Name = "Form1";
             this.Text = "QueuingForm";
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
