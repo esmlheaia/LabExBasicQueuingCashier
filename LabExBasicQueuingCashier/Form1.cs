@@ -16,12 +16,16 @@ namespace LabExBasicQueuingCashier
     {
         private CashierWindowQueueForm cashierform;
         private CashierClass cashier;//this access modifier to declare a class
+        private frmCustomerView serving;
         public Form1()
         {
             InitializeComponent();
             cashier = new CashierClass(); // initialize to call the cashierclass
-            cashierform = new CashierWindowQueueForm();
+            cashierform = new CashierWindowQueueForm(); // initialize to call the cashier window form
+            serving = new frmCustomerView(); // initialize to call thecustomer view
             cashierform.Show();
+            serving.Show();
+
         }
         private void bttnCashier_Click(object sender, EventArgs e)
         {

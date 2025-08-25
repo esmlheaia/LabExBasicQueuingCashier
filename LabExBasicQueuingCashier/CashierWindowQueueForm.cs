@@ -16,6 +16,7 @@ namespace LabExBasicQueuingCashier
         public CashierWindowQueueForm()
         {
             InitializeComponent();
+           
         }
         public void DisplayCashierQueue(IEnumerable CashierList)
         {
@@ -34,8 +35,9 @@ namespace LabExBasicQueuingCashier
         {
             CashierClass.CashierQueue.Dequeue();
             DisplayCashierQueue(CashierClass.CashierQueue);
+            
         }
-        //this time is for refresh the list when there are update in the queue
+        //this timer is for refresh the list when there are update in the queue
         private void timer_Tick(object sender, EventArgs e)
         {
             Timer timer = new Timer();
